@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    /* margin: 0; */
+
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+/*    font-family: "Roboto", sans-serif;*/
+    font-size: 12px;
+    color: #000000;
+  }
+/*judul*/
+
+.judul-center{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  
+}
+  /*ini milk footer*/
+  
+  .article,aside,details,figcaption,figure,footer,header,main,menu,nav,section {
+    display: block
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+      background-color: #208d91d5;
+      overflow: hidden;
+      /*position: fixed;*/
+      width: 100%;
+      z-index: 1;
+  }
+ 
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #147e8be3;
+    color: rgb(121, 196, 214);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  /* SEARCH */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  
+  
+  /* slide*/
+  .mySlides {
+    display:none;
+    
+  }
+  
+  .slide-left, .slide-right, .slide-badge {
+    cursor:pointer
+  }
+  .slide-badge {
+    height:13px;
+    width:13px;
+    padding:0
+  }
+/*ini milik w3-center*/
+
+.judul-center {
+    text-align: center!important
+}
+
+.slide-content {
+  max-width: 980px;
+  animation: opac 0.8s;
+}
+
+
+  .slide-content, .slide-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-tooltip, .slide-display-container {
+    position: relative;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    padding: 0;}
+    @media screen and (min-width){
+    }
+   
+
+
+
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.slide-theme {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.slide-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+.slide-btn, .slide-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.slide-btn, .slide-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+a {
+    color: inherit;
+}
+a {
+    background-color: transparent;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+

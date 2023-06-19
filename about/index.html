@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKAYA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/new.css">
+    
+   
+
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#">IKAYA</a>
+    <a href="#wisata">Destination</a>
+    <a href="../recommendation/index.html">Reccomendation</a>
+    <a href="../about/index.html">About</a>
+    <div class="topnav-right">
+      <input type="text" id="this-search" onkeyup="menu-search" placeholder="Search..">
+      <a href="../login/index.html">Login</a>
+    </div>
+  </div>
+
+ <main id="maincontent" tabindex="0">
+<div class="next-row-padding next-grayscale">
+  <div class="next-col l3 m6 next-margin-bottom">
+    <center>
+        <h3>Indonesia Kaya</h3>
+        <img src="fix-logo.png" alt="Indonesia Kaya" style="width:40%">
+        <p>Ikaya adalah website yang menyajikan informasi baik untuk turis asing maupun pribumi untuk seputar kebudayaan dan kekayaan alam yang ada di Indonesia seperti informasi tentang kuliner dan tempat pariwisata. Dengan adanya website ini diharapkan mampu menjadikan kekayaan alam Indonesia makin dikenal di seluruh dunia serta mampu mengangkat UMKM penduduk terutama di bidang kuliner dan pariwisata.</p>
+    </center>
+  </div>
+</div>
+
+
+  
+   
+</main>
+
+
+
+
+<script>
+  //milik botton
+  function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  // milik search
+	var input = document.getElementById("this-search");
+	var filter = input.value.toLowerCase();
+	var ul = document.getElementById("daftarKategori");
+	var li = document.querySelectorAll("input")
+	console.log(li)
+	for(var i = 0; i<li.length; i++){
+		var ahref = document.querySelectorAll("a")[i];
+		if(ahref.innerHTML.toLowerCase().indexOf(filter) > -1){
+			li[i].style.display = "";
+		}else{
+			li[i].style.display = "none";
+		}
+	}
+
+  // Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+</script>
+
+</body>
+</html> 
